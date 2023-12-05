@@ -1,0 +1,134 @@
+nav {
+    background-color: #000000;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+/* Add styles for the text */
+.logo-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1080px) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+.social-media {
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media li {
+    margin-right: 15px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center; /* Set the transformation origin to the center */
+    transform: scale(1); /* Initial scale, can be adjusted as needed */
+
+    /* Additional styles if necessary */
+}
+
+  .carousel-item {
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 5vw; /* Use vw units for font-size */
+    color: #333;
+    background-color: transparent;
+    border:0; /* Use vw units for border width */
+    outline: none;
+}
+
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        transform: scale(); /* Adjust the scale factor for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .carousel-wrapper {
+        transform: scale(); /* Default scale factor for medium-sized screens */
+    }
+}
+
+@media (min-width: 1201px) {
+    .carousel-wrapper {
+        transform: scale(); /* Adjust the scale factor for larger screens */
+    }
+}
